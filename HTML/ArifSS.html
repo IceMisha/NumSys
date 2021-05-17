@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../style.css">
+        <title>Переводы СС и операции с двоичными числами</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <aside class="aside">
+            <img src="../Pictures/BurgerSidebar.svg" class="burger">
+            <div class="hid">
+                <button class="sidebut">
+                    <p><a href="../index.html" class="href">На главную</a></p>
+                </button>
+                <button class="sidebut">
+                    <p><a href="../HTML/NumSys.html" class="href">Что такое СС</a></p>
+                </button>
+                <button class="sidebut">
+                    <p><a href="../HTML/ArifSS.html" class="href">Операции с СС</a></p>
+                </button>
+                <button class="sidebut">
+                    <p><a href="../HTML/Test.html"" class="href">Тест</a></p>
+                </button>
+            </div>
+        </aside>
+        <header class="headline2">
+            <p>Переводы СС. Операции с двоичными числами.</p>
+            <hr class="line">
+        </header>
+
+        <main>
+            <div class="page">
+                <h2>Переводы из одной СС в другую</h2>
+                <p>Чтобы перевести число из любой системы счисления в десятичную, нужно записать это число в развёрнутой форме и выполнить вычисления в десятичной системе. Например:</p>
+                <p>15678<sub>9</sub> = 1*9<sup>4</sup> + 5*9<sup>3</sup> + 6*9<sup>2</sup> + 7*9<sup>2</sup> + 8*9<sup>0</sup> = 6561 + 3645 + 486 + 63 + 8 = 10763<sub>10</sub></p>
+                <p>10001001<sub>2</sub> = 1*2<sup>7</sup> + 1*2<sup>3</sup> + 1*2<sup>0</sup> = 137<sub>10</sub></p>
+                <p>AF51<sub>16</sub> = 10*16<sup>3</sup> + 15*16<sup>2</sup> + 5*16 + 1 = 44881<sub>10</sub></p>
+                <p>Чтобы перевести число из десятичной СС в любую СС, нужно последовательно делить это число на основание СС, пока не получим частное, равное нулю. Затем записать полученные частные наоборот, слева направо. Например, переведём число 13 в двоичную СС, а число 158 – в шестнадцатеричную.</p>
+                <div class="perpict">
+                    <figure><img src="../Pictures/perevod1.png" class="perevodimg">
+                        <figcaption>13<sub>10</sub> = 1101<sub>2</sub></figcaption>
+                    </figure>
+                    <figure><img src="../Pictures/perevod2.png" class="perevodimg">
+                        <figcaption>158<sub>10</sub> = 9E<sub>16</sub></figcaption>
+                    </figure>
+                </div>
+                <p>Для быстрого перевода двоичного числа в десятичную СС можно использовать схему Горнера: </p>
+                <img src="../Pictures/gorner.png" class="gorner">
+                <ol>
+                    <li>Возьмем 1, соответствующую самому старшему разряду числа, и умножим её на 2</li>
+                    <li>Прибавим следующую цифру</li>
+                    <li>Умножим результат на 2</li>
+                    <li>Прибавим следующую цифру</li>
+                    <li>Умножим результат на 2</li>
+                    <li>Прибавим следующую цифру</li>
+                    <li>Умножим результат на 2</li>
+                </ol>
+                <p>Также, для перевода можно использовать таблицы:</p>
+                <p class="oneimg"><img src="../Pictures/tablica.png"></p>
+                <h2>Арифметические операции с двоичными числами</h2>
+                <p>Арифметические операции с двоичными числами производятся также, как с обычными. Однако, есть свои правила: </p>
+                <p><img src="../Pictures/dvoichpravila.png"></p>
+                <p>Например: 1011,2<sub>2</sub> + 10110,01<sub>2</sub> = 10110,01<sub>2</sub></p>
+                <p>Также можно предварительно перевести двоичные числа в десятичные, выполнить операцию и перевести десятичные числа обратно в двоичные:</p>
+                <p class="oneimg"><img src="../Pictures/dvoichoper.png"></p>
+            </div>
+        </main>
+        <script src="../JS/burgerbar.js"></script>
+    </body>

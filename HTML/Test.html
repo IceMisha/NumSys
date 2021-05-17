@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../style.css">
+        <title>Тест</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <aside class="aside">
+            <img src="../Pictures/BurgerSidebar.svg" class="burger">
+            <div class="hid">
+                <button class="sidebut">
+                    <p><a href="../index.html" class="href">На главную</a></p>
+                </button>
+                <button class="sidebut">
+                    <p><a href="../HTML/NumSys.html" class="href">Что такое СС</a></p>
+                </button>
+                <button class="sidebut">
+                    <p><a href="../HTML/ArifSS.html" class="href">Операции с СС</a></p>
+                </button>
+                <button class="sidebut">
+                    <p><a href="../HTML/Test.html" class="href">Тест</a></p>
+                </button>
+            </div>
+        </aside>
+        <header class="headline2">
+            <p>Тест</p>
+            <hr class="line">
+        </header>
+
+        <main>
+            <div class="page">
+                <ol id="tohid1">
+                    <li>Какие цифры можно использовать в троичной системе счисления? Напишите последовательность чисел без пробелов (например, “456” или “123”). (2 балла)</li>
+                    <input id="elem1" type="text">
+                    <li>Как называется совокупность цифр системы счисления? (1 балл)</li>
+                    <input id="elem2" type="text">
+                    <li>Системы счисления, в которых значения чисел зависят от положения цифр, называются … (1 балл)</li>
+                    <input id="elem3" type="text">
+                    <li>Перевести число в десятичную СС: 100011<sub>2</sub> (2 балла)</li>
+                    <input id="elem4" type="text">
+                    <li>Перевести число в десятичную СС: D15<sub>16</sub> (2 балла)</li>
+                    <input id="elem5" type="text">
+                    <li>Перевести число в двоичную СС: AB<sub>16</sub> (2 балла)</li>
+                    <input id="elem6" type="text">
+                    <li>Перевести число в пятеричную СС: 132<sub>10</sub> (2 балла)</li>
+                    <input id="elem7" type="text">
+                    <li>Сложить два двоичных числа: 1001<sub>2</sub> + 01110<sub>2</sub>. Если операция невозможна, в ответе напишите 3. (2 балла)</li>
+                    <input id="elem8" type="text">
+                    <li>Сложить два двоичных числа: 100101<sub>2</sub> + 1002001<sub>2</sub>. Если операция невозможна, в ответе напишите 3. (2 балла)</li>
+                    <input id="elem9" type="text">
+                    <li>Найдите натуральное число такое, что его запись в шестеричной системе счисления имеет ровно четыре значащих разряда и при этом выполняются следующие условия: 1. Две первые цифры его записи являются одинаковыми между собой, и две последние цифры также одинаковы между собой. 2. Две первые цифры отличны от последних двух цифр. 3. Число является полным квадратом, то есть оно является квадратом некоторого целого числа. В ответе укажите четырехзначное число в шестеричной системе счисления. (4 балла)</li>
+                    <input id="elem10" type="text">
+                </ol>
+
+                <span class="container" id="tohid2">
+                    <button id="butt" type="button" class="ansbutt">
+                        <p>Завершить тест</p>
+                    </button>
+                </span>
+                <div class="result hidden" id="res1">
+                    <p id="result"></p>
+                </div>
+            </div>
+        </main>
+        <script src="../JS/burgerbar.js"></script>
+        <script src="../JS/test.js"></script>
+    </body>
