@@ -90,6 +90,7 @@ body {
     position: fixed;
     margin: 2.5rem 2.3125rem 0 2.3125rem;
     z-index: 1;
+    cursor: pointer;
 }
 .aside .hid{
     visibility: hidden;
