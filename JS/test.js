@@ -26,7 +26,7 @@ butt.onclick = function() {
     a = a+2;
     }
     var ans6 = document.getElementById('elem6').value
-  	if (ans6 == 10101010){
+  	if (ans6 == 10101011){
     a = a+2;
     }
     var ans7 = document.getElementById('elem7').value
