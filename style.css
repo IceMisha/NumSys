@@ -1,30 +1,29 @@
-/* INDEX.HTML START */
-
 body {
     background-color: #fff5ee;
     margin: 0;
     padding: 0;
 }
+
+
+/* INDEX.HTML START */
 .headline1 {
-    position: relative;
-    width: 60rem;
-    height: 5rem;
-    left:calc(50% - 60rem/2);
+    width: 100%;
+    height: 3.5rem;
 
     font-family: 'Rubik',sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 4.5rem;
+    font-size: 2.75rem;
     text-align: center;
     color: rgba(0, 0, 0, 0.85);
 }
 .container{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:center;
 }
 .button {
-    margin-top: 75px;
+    margin-top: 50px;
     background-color: white;
     border: none;
     border-radius: 25px;
@@ -32,7 +31,7 @@ body {
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 3rem;
+    font-size: 2rem;
     line-height:normal;
     text-align: center;
     text-decoration: none;
@@ -44,17 +43,13 @@ body {
 }
 .butt1 {
     position: relative;
-    width: 39.125rem;
+    width: 35rem;
 }
 .butt2 {
-    position:relative;
-    width: 46.25rem;
-}
-.butt3 {
     position: relative;
-    width: 14.4375rem;
+    width: 13rem;
 }
-.butt3:last-child{
+.butt2:last-child{
     margin-bottom: 2.5rem;
 }
 .href{
@@ -77,20 +72,22 @@ body {
     font-family: 'Rubik',sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 4.5rem;
+    font-size: 2.75rem;
     text-align: center;
     color: rgba(0, 0, 0, .85);
 }
 .line{
     color:black;
     margin-top: -1.875rem;
-    width: 52.5rem;
+    width: 48rem;
 }
 .burger{
     position: fixed;
-    margin: 2.5rem 2.3125rem 0 2.3125rem;
+    margin: 2rem 0 0 2rem;
     z-index: 1;
     cursor: pointer;
+    height: 20px;
+    width: 25.8px;
 }
 .aside .hid{
     visibility: hidden;
@@ -102,29 +99,45 @@ body {
     left: 0;
     background-color:rgb(255,239,231);
     height: 100vh;
-    width: 27rem;
+    width: 15rem;
     z-index: 2;
     transition: 0.4s;
     border-radius: 0 20px 20px 0;
 }
 .sidebut{
     position: relative;
-    width: 15.625rem;
+    width: 9rem;
     background-color: white;
     border-radius: 25px;
     border: none;
     align-items: center;
-    margin: 2.1875rem 5.6875rem 0 5.6875rem;
+    margin: 3rem 3rem 0 3rem;
 
     font-family: 'Rubik',sans-serif;
-    line-height: 3rem;
-    font-size: 2.5rem;
-    font-weight: 300;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    font-weight: 400;
     text-align: center;
     align-items: center;
-}
+    }
 .sidebut:first-child{
     margin-top: 8rem;
+}
+.dttitle:hover:after{
+    content: attr(data-title);
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 0.85rem;
+    position: fixed;
+    left:0.25rem;
+    right:0;
+    top: 4rem;
+    width: 6.3rem;
+    text-align: left;
+    color:rgba(0, 0, 0, 0.9);
+    z-index: 1;
+    text-align:left;
+    font-style: italic;
 }
 
 .page{
@@ -134,12 +147,12 @@ body {
     margin: 3.4375rem 6.5625rem 2rem 6.5625rem;
 
     font-family: 'Rubik', sans-serif;
-    font-size: 2rem;
+    font-size: 1.25rem;
     font-weight: 300;
     text-align: left;
-    padding: 1rem;
-    line-height: 2.7rem;
-    text-indent: 3rem;
+    padding: 1.5rem;
+    line-height: 1.3;
+    -text-indent: 2rem;
     
 }
 h2{
@@ -152,6 +165,9 @@ sub{
 }
 sup{
     font-size:medium;
+}
+.ibold{
+    font-weight: 400;
 }
 
 /* NumSys.html END */
@@ -166,7 +182,7 @@ sup{
     justify-content: space-around;
 }
 .perevodimg{
-    height: 122px;
+    height: 72px;
 }
 .gorner{
     float:left;
@@ -185,15 +201,14 @@ ol{
 
 
 /*Test.html START*/
-
 input{
     background-color: #fff5ee;
     border: 1px solid black;
-    margin: 1.75rem 2.5rem 1.75rem 0;
+    margin: 1rem 2.5rem 1rem 0;
     border-radius: 15px;
 
-    line-height: 2.5rem;
-    font-size: 2rem;
+    line-height: 2rem;
+    font-size: 1.25rem;
     font-family:"Rubik", sans-serif;
     color: rgba(0, 0, 0, 0.8);
     font-weight: 400;
@@ -201,16 +216,16 @@ input{
 .ansbutt{
     background-color: #fff5ee;
     border: 1px solid black;
-    margin: 0rem 5rem 2.5rem 5rem;
-    width: 80rem;
+    margin-bottom: 2.5rem;
+    width: 50rem;
     border-radius: 25px;
     cursor: pointer;
 
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 3rem;
-    line-height: 2.5rem;
+    font-size: 2rem;
+    line-height: 1.6rem;
     text-align: center;
     text-decoration: none;
     color: rgba(0, 0, 0, 0.8);
@@ -218,16 +233,16 @@ input{
 .result{
     background-color: #fff5ee;
     border: 1px solid black;
-    margin: 1rem 0rem 2.5rem 12rem;
+    margin: 1rem auto 2.5rem auto;
     position:relative;
-    width: 80rem;
+    width: 50rem;
     border-radius: 25px;
     
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 3rem;
-    line-height: 2.5rem;
+    font-size: 2rem;
+    line-height: 1.6rem;
     text-align: center;
     text-decoration: none;
     color: rgba(0, 0, 0, 0.8);
@@ -237,7 +252,7 @@ input{
     height: 0;
     margin: 0;
 }
-ol:first-child{
+.olmargin{
     margin-top: 2rem;
 }
 
@@ -259,3 +274,5 @@ ol:first-child{
 .left{
     text-align: left;
 }
+
+/*Author.html END*/
