@@ -111,7 +111,7 @@ body {
     border-radius: 25px;
     border: none;
     align-items: center;
-    margin: 3rem 3rem 0 3rem;
+    margin: 1.5rem 3rem 0 3rem;
 
     font-family: 'Rubik',sans-serif;
     line-height: 2rem;
@@ -121,7 +121,7 @@ body {
     align-items: center;
     }
 .sidebut:first-child{
-    margin-top: 8rem;
+    margin-top: 4rem;
 }
 .dttitle:hover:after{
     content: attr(data-title);
