@@ -2,6 +2,7 @@ var a = 0
 var string1 = "012"
 var string2 = "алфавит"
 var string3 = "позицион"
+var string9 = "Нет"
 butt.onclick = function() {
     /* Считываем инпаты*/
 
@@ -27,7 +28,7 @@ butt.onclick = function() {
     }
     var ans6 = document.getElementById('elem6').value
   	if (ans6 == 10101011){
-    a = a+2;
+    a = a+3;
     }
     var ans7 = document.getElementById('elem7').value
   	if (ans7 == 1012){
@@ -38,8 +39,8 @@ butt.onclick = function() {
     a = a+2;
     }
     var ans9 = document.getElementById('elem9').value
-  	if (ans9 == 3){
-    a = a+2;
+  	if (ans9 == (string9)){
+    a = a+1;
     }
     var ans10 = document.getElementById('elem10').value
   	if (ans10 == 3344){
@@ -50,6 +51,7 @@ butt.onclick = function() {
     document.getElementById('tohid2').classList.add('hidden');
     document.getElementById('res1').classList.remove('hidden');
     window.scrollTo(0,-2000);
+    /*                                          */
 
 document.getElementById('result').innerHTML = "Ваш результат: " +a + " баллов (-а) из 20"
 a=0
